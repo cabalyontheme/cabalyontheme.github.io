@@ -1,0 +1,89 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(4, 4, 17);
+}
+
+.icon {
+    color: rgba(255, 255, 255, 0.637);
+    transition: 0.5s;
+}
+
+.icon:hover {
+    color: rgb(17, 231, 178);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(17, 231, 178);
+}
+
+img[alt="logo"] {
+    max-width: 600px;
+    width: 100%;
+    animation: float infinite 7s ease-in-out;
+}
+
+@keyframes float {
+    0%,100% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.flex-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 150px 10px;
+}
+
+.container-home-content h1 {
+    color: rgb(17, 231, 178);
+    font-size: 50px;
+}
+
+.container-home-content h2 {
+    color: #ffffff85;
+    font-size: 30px;
+}
+
+.container-home-content p {
+    color: #ffffff;
+}
+
+.btn-outline-green {
+    border: 1px solid rgb(17, 231, 178);
+    color: rgba(17, 231, 178, 0.904);
+}
+
+.btn-outline-green:hover {
+    color:rgb(17, 231, 178);
+    background-color: rgba(17, 231, 178, 0.219);
+}
+
+@media screen and (max-width: 998px) {
+    .flex-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px;
+        gap: 30px;
+    }
+}
